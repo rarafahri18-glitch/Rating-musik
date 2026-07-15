@@ -4,7 +4,7 @@ import random
 st.title("Rating seberapa tinggi selera muasik loe")
 
 musik = st.text_input("Masukkan musik ke sukaan loe: {musik}")
-if st.butoon("lihat Rating"):
+if st.button("lihat Rating"):
   angka = random.Radiant(1, 10)
 
 if angka < 3:
