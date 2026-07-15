@@ -5,12 +5,12 @@ st.title("Rating seberapa tinggi selera muasik loe")
 
 musik = st.text_input("Masukkan musik ke sukaan loe: {musik}")
 if st.button("lihat Rating"):
-  angka = random.Radiant(1, 10)
+  angka = random.Radiant(1,10)
 
-if angka < 3:
+if angka <3:
   Rating = "kurang bagus bro"
-elif angka < 7:
-  Rating = "bBagus"
+elif angka <7:
+  Rating = "Bagus"
 else:
   Rating = "Elitis kah?"
 
