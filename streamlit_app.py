@@ -3,16 +3,19 @@ import random
 
 st.title("Rating seberapa tinggi selera muasik loe")
 
-musik = st.text_input("Masukkan musik ke sukaan loe: {musik}")
-if st.button("lihat Rating"):
-  angka = random.Radiant(1,10)
+import streamlit as st
+import random
 
-if angka <3:
-  Rating = "kurang bagus bro"
-elif angka <7:
-  Rating = "Bagus"
-else:
-  Rating = "Elitis kah?"
+musik = st.text_input("Masukkan musik kesukaan loe:")
 
-st.write(f"Musik kesukaan loe: {musik}")
-st.success(f"Rating: {Rating}")
+if st.button("Lihat Rating"):
+    angka = random.randint(1, 10)
+    if angka < 3:
+        Rating = "kurang bagus bro"
+    elif angka < 7:
+        Rating = "Bagus"
+    else:
+        Rating = "Elitis kah?"
+
+    st.write(f"Musik kesukaan loe: {musik}")
+    st.success(f"Rating: {Rating}")
